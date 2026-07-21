@@ -15,7 +15,7 @@ function tryAutoplay () {
     }
 }
 
-function toggleMusic() {
+function togglemusic() {
   if (playing) { music.pause(); playing = false; label.textContent = 'Música'; }
   else         { music.play();  playing = true;  label.textContent = 'Pausar'; }
 }
