@@ -1,0 +1,29 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --cream: #FFF9F0;
+  --pink: #FF6FA5;
+  --yellow: #FFD23F;
+  --sky: #6FC7EC;
+  --text: #3D2C3A;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--sky);
+  font-family: 'Fredoka', sans-serif;
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+#audiobar {
+    position: fixed; top: 1rem; right: 1rem; z-index: 999;
+    display: flex; align-items: center; gap: 8px;
+    background-color: #3D2C3A; backdrop-filter: blur(8px);
+    border: 1px solid var(--sky); padding: 8px 16px;
+    border-radius: 40px; cursor: pointer; transition: all 0.3s;
+    font-family: 'Fredoka' , sans-serif;
+}
+#audiobar:hover {background-color: var(--yellow);}
+#audiobar span { font-size: 11px; letter-spacing: 0.15em; color: var(--cream); text-transform: uppercase;}
