@@ -93,7 +93,7 @@ async function confirmarAsistencia() {
     const s = document.getElementById('rsvp-success');
     s.style.display = 'block';
     document.getElementById('rsvp-ok').textContent = asiste === 'Sí'
-      ? '¡Nos vemos en los XV, '    + nombre.split(' ')[0] + '!'
+      ? '¡Nos vemos en el cumpleaños, '    + nombre.split(' ')[0] + '!'
       : '¡Gracias por avisarnos, '   + nombre.split(' ')[0] + '!';
 
   } catch (err) {
