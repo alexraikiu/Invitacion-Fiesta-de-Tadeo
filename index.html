@@ -18,6 +18,134 @@
     <audio id="bgMusic" loop>
         <source src="La canción de Bluey!  Bluey Español Canal Oficial.mp3" type="audio/mpeg">
     </audio>
+
+<!-- HERO -->
+<section id="hero">
+  <span class="floaty floaty--slow" style="top:8%; left:6%;">🐾</span>
+  <span class="floaty floaty--delay" style="top:14%; right:8%;">🎈</span>
+  <span class="floaty" style="bottom:10%; left:10%;">⭐</span>
+  <div id="hero-bg"></div>  <!-- imagen arriba -->
+  
+  <div id="hero-content">  <!-- texto abajo -->
+    <div class="ornament fade-up"></div>
+    <h1 style="margin-bottom: 120px;">
+      Éste episodio de Bluey se llama:...
+    </h1>
+    <h1 style="margin-bottom: 120px;">
+      <em> Tadeo cumple 4 años, 6 meses y 18 dias.
+      </em>
+    </h1>
+    <div class="divider fade-up"></div>
+    <p class="hero-date fade-up"></p>
+    <div class="scroll-hint"><span></span></div>
+  </div>
+</section>
+
+<section id="Fecha" class="fade-up">
+  <span class="floaty floaty--slow" style="top:5%; right:10%;">🎉</span>
+  <span class="floaty floaty--delay" style="bottom:8%; left:6%;">🐾</span>
+  <h1 style="margin-bottom: 100px;">
+    Fecha
+  </h1>
+  <img src="fecha.png" alt="" style="margin-bottom: 120px;">
+</section>
+
+<!-- UBICACIONES -->
+<div id="ubicaciones" class="fade-up">
+  <span class="floaty floaty--slow" style="top:2%; left:4%;">🐾</span>
+  <span class="floaty floaty--delay" style="top:6%; right:5%;">🎈</span>
+  <div class="inner" style="max-width:900px; margin:0 auto; text-align:center;">
+  <p class="section-label">¿Cómo llegar?</p>
+  <h2>Lugar del <em>evento</em></h2>
+  <p class="body-text">Te espero en mi cumpleaños!</p>
+  <div class="locations-grid">
+          <div class="location-card">
+      <p class="location-type">Fiesta</p>
+      <p class="emoticon">🎉</p>
+      <p class="location-name">Mi 5ta Ilusión.</p>
+      <p class="location-details">Alamo 230, esquina con Ciprés<br><strong>Hora:</strong> 3:30 pm</p>
+      <p class="location-details">Show<br><strong>Hora:</strong> 6:30 pm</p>
+      <div class="map-btns">
+        <a href="https://maps.app.goo.gl/vrAmmSZBiuDPqfXZ7" target="_blank" class="btn-map">📍 Google Maps</a>
+        <a href="https://ul.waze.com/ul?place=ChIJdfxsxnDBYoYRxLR-w4TZU4g&ll=25.63077330%2C-100.18323760&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank" class="btn-map">🚗 Waze</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- QUÉ LLEVAR -->
+<section id="que-llevar" class="fade-up">
+  <span class="floaty floaty--slow" style="top:4%; left:6%;">🌊</span>
+  <span class="floaty floaty--delay" style="top:2%; right:6%;">☀️</span>
+  <p class="section-label">Un dato importante</p>
+  <h2>¿Qué <em>llevar</em>?</h2>
+  <div class="llevar-card llevar-card--compact">
+    <ul class="llevar-list llevar-list--compact">
+      <li><span class="emoji">🧴</span>Bloqueador solar</li>
+      <li><span class="emoji">👕</span>Cambio de ropa</li>
+      <li><span class="emoji">🏖️</span>Toalla</li>
+      <li><span class="emoji">😄</span>Muchas ganas de jugar</li>
+    </ul>
+  </div>
+  <p class="mensaje-final">¡No olvides tu traje de baño! 🌊</p>
+</section>
+
+<!-- REGALO -->
+<section id="regalo" class="fade-up">
+  <span class="floaty floaty--slow" style="top:3%; left:8%;">🎈</span>
+  <span class="floaty floaty--delay" style="top:5%; right:8%;">🐾</span>
+  <p class="section-label">Detalle especial</p>
+  <h2>¿Un <em>regalito</em>?</h2>
+  <div class="llevar-card regalo-card">
+    <p class="regalo-texto">🎁<br>Puedes traer un sobre o regalo para Tadeo</p>
+  </div>
+</section>
+
+<!-- RSVP -->
+<div id="rsvp">
+  <div class="inner">
+    <p class="section-label fade-up" >Gracias por asistir a mi cumpleaños.</p>
+    <p class="section-label fade-up">Confirmación</p>
+    <h2 class="fade-up">¿Asistiré al cumpleaños?</h2>
+    <p class="body-text fade-up">Escribe tu nombre y confirma tu asistencia.</p>
+
+    <div class="rsvp-form" id="rsvp-form">
+      <input type="text" id="guestName" class="rsvp-input"
+             placeholder="Tu nombre completo">
+
+      <select id="guestAsiste" class="rsvp-input" style="cursor:pointer">
+        <option value="">¿Asistirás? — Selecciona</option>
+        <option value="Sí">Sí, asistiré con gusto 🎉</option>
+        <option value="No">Lo siento, no podré asistir</option>
+      </select>
+
+      <select id="guestAcomp" class="rsvp-input"
+              style="cursor:pointer; display:none">
+        <option value="0">Solo yo</option>
+        <option value="1">+1 acompañante</option>
+        <option value="2">+2 acompañantes</option>
+        <option value="3">+3 acompañantes</option>
+      </select>
+
+      <input type="text" id="guestMsg" class="rsvp-input"
+             placeholder="Mensaje para la quinceañera (opcional)">
+
+      <button class="btn-rsvp" id="btn-rsvp" onclick="confirmarAsistencia()">
+        ✓ &nbsp; Confirmar asistencia
+      </button>
+      <p id="rsvp-status" style="color:rgba(255,255,255,0.5);
+         font-size:13px; margin:0"></p>
+    </div>
+
+    <div id="rsvp-success" style="display:none; text-align:center; padding:1rem">
+      <p style="font-size:32px; margin:0 0 .5rem">💌</p>
+      <p id="rsvp-ok" style="color:white; font-size:1.1rem;
+         font-family:'Cormorant Garamond',serif; font-style:italic"></p>
+    </div>
+  </div>
+</div>
+
 </body>
 
 <footer>
